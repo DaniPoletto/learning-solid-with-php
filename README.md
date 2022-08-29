@@ -13,7 +13,7 @@ There are:
 5. Dependency Inversion Principle
 
 ### 1. Single Responsability Principle
-One class <b>MAY</b> have just <b>ONE</b> reason to change. 
+One class/method <b>MAY</b> have just <b>ONE</b> reason to change. 
 
 ## Instalation
 ```
