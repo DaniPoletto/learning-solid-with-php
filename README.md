@@ -1,4 +1,4 @@
-# Learning Solid With PHP
+# Learning SOLID With PHP
 
 ### How is the project?
 Project was created during Alura course to learn principles of SOLID with PHP. 
