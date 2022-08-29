@@ -6,13 +6,13 @@ In the Begining, it's given a project to refactorate during tha classes using th
 
 ## What's SOLID principles?
 There are:
-- Single Responsability Principle
-- Open / Closed Principle
-- Liskov Substitution Principle
-- Interface Segregation Principle
-- Dependency Inversion Principle
+1. Single Responsability Principle
+2. Open / Closed Principle
+3. Liskov Substitution Principle
+4. Interface Segregation Principle
+5. Dependency Inversion Principle
 
-### Single Responsability Principle
+### 1. Single Responsability Principle
 One class <b>MAY</b> have just <b>ONE</b> reason to change. 
 
 ## Instalation
