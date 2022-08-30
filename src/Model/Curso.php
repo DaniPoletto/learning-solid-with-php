@@ -5,8 +5,9 @@ namespace Alura\Solid\Model;
 use Alura\Solid\Model\Video;
 use Alura\Solid\Model\Feedback;
 use Alura\Solid\Model\Pontuavel;
+use Alura\Solid\Model\Assistivel;
 
-class Curso implements Pontuavel
+class Curso implements Pontuavel, Assistivel
 {
     private $nome;
     private $videos;
