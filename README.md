@@ -21,6 +21,12 @@ Software entities (classes, modules, functions, etc.) <b>SHOULD</b> be <b>open</
 ### 3. Liskov Segregation Principle
 Subclasses should be substitutable for their base classes. Child classes must never violate the type definitions of the parent class.
 
+### 4. Dependency Inversion Principle
+High-level modules should not depend on low-level modules; both should depend on abstractions.
+
+### 5. Interface Segregation Principle
+Clients should not be forced to depend upon interfaces that they do not use.
+
 ## Project installation
 ```
 composer install
