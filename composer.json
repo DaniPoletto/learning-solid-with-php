@@ -4,5 +4,8 @@
     "psr-4": {
       "Alura\\Solid\\": "src/"
     }
+  },
+  "require": {
+    "pdepend/pdepend": "2.10.3"
   }
 }
