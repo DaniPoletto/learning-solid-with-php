@@ -18,6 +18,9 @@ Every class/method <b>SHOULD</b> have <b>only</b> one reason to change.
 ### 2. Open / Closed Principle
 Software entities (classes, modules, functions, etc.) <b>SHOULD</b> be <b>open</b> for extension, but <b>closed</b> for modification.
 
+### 3. Liskov Segregation Principle
+Subclasses should be substitutable for their base classes.
+
 ## Instalation
 ```
 composer install
