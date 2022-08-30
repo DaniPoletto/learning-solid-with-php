@@ -19,7 +19,7 @@ Every class/method <b>SHOULD</b> have <b>only</b> one reason to change.
 Software entities (classes, modules, functions, etc.) <b>SHOULD</b> be <b>open</b> for extension, but <b>closed</b> for modification.
 
 ### 3. Liskov Segregation Principle
-Subclasses should be substitutable for their base classes.
+Subclasses should be substitutable for their base classes. Child classes must never violate the type definitions of the parent class.
 
 ## Instalation
 ```
