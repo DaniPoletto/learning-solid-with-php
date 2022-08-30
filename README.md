@@ -1,11 +1,11 @@
 # Learning SOLID With PHP
 
 ## How is the project?
-Project was created during Alura course to learn principles of SOLID with PHP. 
-In the Begining, it's given a project to refactorate during tha classes using this principles.
+This project was created during the course of Alura to study the principles of SOLID with PHP. The objective is to refactor an existing project using these principles.
 
-## What's SOLID principles?
-There are:
+## What are SOLID principles?
+SOLID is a mnemonic acronym for five design principles intended to make object-oriented designs more understandable, flexible, and maintainable. They are:
+ 
 1. Single Responsibility Principle
 2. Open / Closed Principle
 3. Liskov Substitution Principle
@@ -21,7 +21,7 @@ Software entities (classes, modules, functions, etc.) <b>SHOULD</b> be <b>open</
 ### 3. Liskov Segregation Principle
 Subclasses should be substitutable for their base classes. Child classes must never violate the type definitions of the parent class.
 
-## Instalation
+## Project installation
 ```
 composer install
 ```
