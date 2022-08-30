@@ -25,3 +25,32 @@ Subclasses should be substitutable for their base classes. Child classes must ne
 ```
 composer install
 ```
+
+## [Pdepend](https://github.com/pdepend/pdepend) 
+
+Pdepend is a package used to generate reports on dependencies in PHP.
+
+### Installation
+```
+composer require "pdepend/pdepend:2.10.3"
+```
+
+### List all commands
+```
+vendor\bin\pdepend.bat
+```
+
+### Generate chart
+```
+vendor\bin\pdepend.bat --jdepend-chart=C:\wamp64\www\learning-solid-with-php\grafico2 C:\wamp64\www\learning-solid-with-php\src
+```
+
+### Conclusion
+
+The first image was generated in the begging of the project and shows that the project is far from ideal.
+
+![Chart 1](https://github.com/DaniPoletto/learning-solid-with-php/blob/main/grafico1.svg)
+
+The second shows that the working process is getting a good result. 
+
+![Chart 2](https://github.com/DaniPoletto/learning-solid-with-php/blob/main/grafico2.svg)
