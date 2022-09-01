@@ -10,7 +10,7 @@ class Feedback
 
     public function __construct(int $nota, ?string $depoimento)
     {
-        if ($nota < 9 && empty($depoimento)) {
+        if ($this->ehNotaMenorQue9SemDepoimento($nota, $depoimento)) {
             throw new \DomainException('Depoimento obrigatório');
         }
 
@@ -26,5 +26,10 @@ class Feedback
     public function recuperarDepoimento(): ?string
     {
         return $this->depoimento;
+    }
+
+    private function ehNotaMenorQue9SemDepoimento(int $nota, int $depoimento)
+    {
+        return $nota < 9 && empty($depoimento);
     }
 }
