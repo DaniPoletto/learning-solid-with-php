@@ -5,3 +5,13 @@ Curso (Alura\Solid\Tests\Model\Curso)
  [x] Curso deve receber videos com 3 minutos ou mais with data set "video-4-minutos"
  [x] Curso deve receber videos com 3 minutos ou mais with data set "video-3-minutos"
 
+Feedback (Alura\Solid\Tests\Model\Feedback)
+ [x] Feedback com nota menor que 9 deve receber depoimento with data set "nota-1-sem-depoimento"
+ [x] Feedback com nota menor que 9 deve receber depoimento with data set "nota-8-sem-depoimento"
+ [x] Feedback com nota menor que 9 nao deve receber depoimento em branco with data set "nota-1-sem-depoimento"
+ [x] Feedback com nota menor que 9 nao deve receber depoimento em branco with data set "nota-8-sem-depoimento"
+ [x] Feedback com nota maior ou igual a 9 deve ser opcional with data set "nota-9-com-depoimento"
+ [x] Feedback com nota maior ou igual a 9 deve ser opcional with data set "nota-9-sem-depoimento"
+ [x] Feedback com nota maior ou igual a 9 deve ser opcional with data set "nota-10-com-depoimento"
+ [x] Feedback com nota maior ou igual a 9 deve ser opcional with data set "nota-10-sem-depoimento"
+
