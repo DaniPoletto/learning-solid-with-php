@@ -67,6 +67,12 @@ class CursoTest extends TestCase
         self::assertCount(count($videosParaAssitir), $videos);
     }
 
+    function testCursoPodeRecuperarAPontuacao()
+    {
+        $pontuacaoCurso = $this->curso->recuperarPontuacao();
+        self::assertEquals(100, $pontuacaoCurso);
+    }
+
     function criaVideoDeMais3MinutosOuMais()
     {
         $videoComQuatroMinuto = new Video("Aula 1", '4 minute');
