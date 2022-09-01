@@ -73,3 +73,26 @@ The second image shows that the work in progress is coming up with a good result
 And finally, this project reaches a more ideal state when concrete class depends more on abstract classes than the opposite. 
 
 ![Chart 3](https://github.com/DaniPoletto/learning-solid-with-php/blob/main/grafico3.svg)
+
+## Tests
+
+To make tests i used PHPUnit.
+
+### Installation
+If you already have use the command `composer install` to this project, you can skip this step.
+
+```
+composer require --dev phpunit/phpunit ^9
+```
+
+### Checking version
+```
+vendor\bin\phpunit --version
+```
+
+### Generating tests
+```
+vendor\bin\phpunit
+```
+
+A file report 'testes-executados.txt' will be created with the results of all tests.
