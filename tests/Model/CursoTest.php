@@ -67,7 +67,7 @@ class CursoTest extends TestCase
         self::assertCount(count($videosParaAssitir), $videos);
     }
 
-    function testCursoPodeRecuperarAPontuacao()
+    function testCursoDeveRecuperarPontuacaoDe100()
     {
         $pontuacaoCurso = $this->curso->recuperarPontuacao();
         self::assertEquals(100, $pontuacaoCurso);

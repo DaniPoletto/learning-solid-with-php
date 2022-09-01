@@ -16,7 +16,7 @@ class AluraMaisTest extends TestCase
         $this->aluraMais = new AluraMais("Video sobre PHP", "PHP");
     }
 
-    function testAluramaisPodeRecuperarAPontuacao()
+    function testAluramaisDeveRecuperarAPontuacaoComoSendoODobroDaSuaDuracao()
     {
         $pontuacao = $this->aluraMais->recuperarPontuacao();
         $duracao = $this->aluraMais->minutosDeDuracao();
