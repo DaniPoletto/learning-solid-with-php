@@ -1,0 +1,7 @@
+Curso (Alura\Solid\Tests\Model\Curso)
+ [x] Curso nao deve receber videos com menos de tres minutos with data set "video-0-minutos"
+ [x] Curso nao deve receber videos com menos de tres minutos with data set "video-1-minuto"
+ [x] Curso nao deve receber videos com menos de tres minutos with data set "video-2-minutos"
+ [x] Curso deve receber videos com 3 minutos ou mais with data set "video-4-minutos"
+ [x] Curso deve receber videos com 3 minutos ou mais with data set "video-3-minutos"
+

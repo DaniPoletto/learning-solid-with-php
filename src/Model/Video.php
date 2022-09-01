@@ -11,11 +11,13 @@ class Video
     /** @var \DateInterval */
     protected $duracao;
 
-    public function __construct(string $nome)
-    {
+    public function __construct(
+        string $nome, 
+        string $duracao = '0 minute'
+    ) {
         $this->nome = $nome;
         $this->assistido = false;
-        $this->duracao = \DateInterval::createFromDateString('0');
+        $this->duracao = \DateInterval::createFromDateString($duracao);
     }
 
     public function assistir(): void
@@ -31,5 +33,10 @@ class Video
     public function recuperarUrl(): string
     {
         return 'http://videos.alura.com.br/' . http_build_query(['nome' => $this->nome]);
+    }
+
+    public function recuperarNome(): string 
+    {
+        return $this->nome;
     }
 }
