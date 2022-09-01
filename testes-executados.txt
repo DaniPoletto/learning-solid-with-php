@@ -1,5 +1,6 @@
 Alura Mais (Alura\Solid\Tests\Model\AluraMais)
  [x] Aluramais deve recuperar a pontuacao como sendo o dobro da sua duracao
+ [x] Aluramais deve recuperar url com categoria
 
 Curso (Alura\Solid\Tests\Model\Curso)
  [x] Curso nao deve receber videos com menos de tres minutos with data set "video-0-minutos"

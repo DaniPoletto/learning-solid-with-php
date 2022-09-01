@@ -24,4 +24,9 @@ class AluraMaisTest extends TestCase
         self::assertEquals($duracao * 2, $pontuacao);
     }
 
+    function testAluramaisDeveRecuperarUrlComCategoria()
+    {
+        $url = $this->aluraMais->recuperarUrl();
+        self::assertEquals('http://videos.alura.com.br/php', $url);
+    }
 }
