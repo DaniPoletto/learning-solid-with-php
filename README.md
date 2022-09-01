@@ -43,7 +43,7 @@ composer install
 Pdepend is a package used to generate reports on dependencies in PHP.
 
 #### Installation
-If you already have use the command `composer install` to this project, you can skip this step.
+If you already have used the command `composer install` to this project, you can skip this step.
 
 To install pdepend
 ```
@@ -79,7 +79,7 @@ And finally, this project reaches a more ideal state when concrete class depends
 To make tests i used PHPUnit.
 
 ### Installation
-If you already have use the command `composer install` to this project, you can skip this step.
+If you already have used the command `composer install` to this project, you can skip this step.
 
 ```
 composer require --dev phpunit/phpunit ^9
