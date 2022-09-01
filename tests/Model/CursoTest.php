@@ -45,6 +45,28 @@ class CursoTest extends TestCase
         self::assertGreaterThanOrEqual(3, $videos[0]->minutosDeDuracao());
     }
 
+    /**
+     * @dataProvider criaArrayDeVideos
+     */
+    public function testCursoPodeSerAssistido(array $videosParaAssitir)
+    {
+        foreach ($videosParaAssitir as $video) {
+            $this->curso->adicionarVideo($video);
+        }
+
+        $videos = $this->curso->recuperarVideos();
+        foreach ($videos as $videoQueSeraAssistido) {
+            self::assertEquals(false, $videoQueSeraAssistido->recuperarAssistido());
+        }
+
+        $this->curso->assistir();
+        foreach ($videos as $videoAssistido) {
+            self::assertEquals(true, $videoAssistido->recuperarAssistido());
+        }
+
+        self::assertCount(count($videosParaAssitir), $videos);
+    }
+
     function criaVideoDeMais3MinutosOuMais()
     {
         $videoComQuatroMinuto = new Video("Aula 1", '4 minute');
@@ -66,6 +88,22 @@ class CursoTest extends TestCase
             "video-0-minutos" => [$videoSemMinutos],
             "video-1-minuto" => [$videoComUmMinuto],
             "video-2-minutos" => [$videoComDoisMinuto]
+        ];
+    }
+
+    function criaArrayDeVideos()
+    {
+        $video1 = new Video("Aula 1", '4 minute');
+        $video2 = new Video("Aula 2", '3 minute');
+        $video3 = new Video("Aula 3", '10 minute');
+
+        return [
+            "1-video" => [
+                [$video3]
+            ],
+            "2-videos" => [
+                [$video1, $video2]
+            ]
         ];
     }
 }

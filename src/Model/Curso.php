@@ -47,7 +47,7 @@ class Curso implements Pontuavel, Assistivel
 
     public function assistir(): void
     {
-        foreach ($curso->recuperarVideos() as $video) {
+        foreach ($this->recuperarVideos() as $video) {
             $video->assistir();
         }
     }

@@ -28,7 +28,7 @@ class Feedback
         return $this->depoimento;
     }
 
-    private function ehNotaMenorQue9SemDepoimento(int $nota, int $depoimento)
+    private function ehNotaMenorQue9SemDepoimento(int $nota, string $depoimento)
     {
         return $nota < 9 && empty($depoimento);
     }

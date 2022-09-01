@@ -39,4 +39,9 @@ class Video
     {
         return $this->nome;
     }
+
+    public function recuperarAssistido()
+    {
+        return $this->assistido;
+    }
 }
