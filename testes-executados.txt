@@ -22,3 +22,11 @@ Feedback (Alura\Solid\Tests\Model\Feedback)
  [x] Feedback com nota maior ou igual a 9 deve ser opcional with data set "nota-10-com-depoimento"
  [x] Feedback com nota maior ou igual a 9 deve ser opcional with data set "nota-10-sem-depoimento"
 
+Video (Alura\Solid\Tests\Model\Video)
+ [x] Video deve recuperar url com nome with data set "video-com-numero-no-nome"
+ [x] Video deve recuperar url com nome with data set "video-com-letras-no-nome"
+ [x] Video deve recuperar url com nome with data set "video-com-caracteres-especiais-no-nome"
+ [x] Video deve poder ser assistido
+ [x] Video deve recuperar minutos de duracao with data set "video-com-0-minutos"
+ [x] Video deve recuperar minutos de duracao with data set "video-com-10-minutos"
+
