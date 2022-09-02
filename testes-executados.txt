@@ -11,6 +11,7 @@ Curso (Alura\Solid\Tests\Model\Curso)
  [x] Curso pode ser assistido with data set "1-video"
  [x] Curso pode ser assistido with data set "2-videos"
  [x] Curso deve recuperar pontuacao de 100
+ [x] Curso deve receber feebacks
 
 Feedback (Alura\Solid\Tests\Model\Feedback)
  [x] Feedback com nota menor que 9 deve receber depoimento with data set "nota-1-sem-depoimento"

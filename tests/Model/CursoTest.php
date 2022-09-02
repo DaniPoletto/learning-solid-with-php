@@ -3,6 +3,7 @@ namespace Alura\Solid\Tests\Model;
 
 use Alura\Solid\Model\Curso;
 use Alura\Solid\Model\Video;
+use Alura\Solid\Model\Feedback;
 use PHPUnit\Framework\TestCase;
 
 class CursoTest extends TestCase
@@ -67,10 +68,27 @@ class CursoTest extends TestCase
         self::assertCount(count($videosParaAssitir), $videos);
     }
 
-    function testCursoDeveRecuperarPontuacaoDe100()
+    public function testCursoDeveRecuperarPontuacaoDe100()
     {
         $pontuacaoCurso = $this->curso->recuperarPontuacao();
         self::assertEquals(100, $pontuacaoCurso);
+    }
+
+    public function testCursoDeveReceberFeebacks()
+    {
+        $feedback = new Feedback(10, "Muito bom");
+        $feedback2 = new Feedback(1, "Precisa melhorar");
+
+        $this->curso->receberFeedback($feedback);
+        $this->curso->receberFeedback($feedback2);
+
+        $feedbacks = $this->curso->recuperarFeedbacks();
+
+        self::assertCount(2, $feedbacks);
+        self::assertEquals(10, $feedbacks[0]->recuperarNota());
+        self::assertEquals(1, $feedbacks[1]->recuperarNota());
+        self::assertEquals("Muito bom", $feedbacks[0]->recuperarDepoimento());
+        self::assertEquals("Precisa melhorar", $feedbacks[1]->recuperarDepoimento());
     }
 
     function criaVideoDeMais3MinutosOuMais()

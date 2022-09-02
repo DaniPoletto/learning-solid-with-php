@@ -40,6 +40,12 @@ class Curso implements Pontuavel, Assistivel
         return $this->videos;
     }
 
+    /** @return Feedback[] */
+    public function recuperarFeedbacks(): array
+    {
+        return $this->feedbacks;
+    }
+
     public function recuperarPontuacao(): int
     {
         return 100;
