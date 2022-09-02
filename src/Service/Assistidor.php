@@ -2,11 +2,11 @@
 
 namespace Alura\Solid\Service;
 
-use Alura\Solid\Model\Pontuavel;
+use Alura\Solid\Model\Assistivel;
 
 class Assistidor
 {
-    public function assisteConteudo(Pontuavel $consteudo)
+    public function assisteConteudo(Assistivel $consteudo)
     {
         $consteudo->assistir();
     }
